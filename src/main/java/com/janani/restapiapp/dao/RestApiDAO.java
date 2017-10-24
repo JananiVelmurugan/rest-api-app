@@ -31,6 +31,7 @@ public class RestApiDAO {
 		return restApiList;
 	}
 
+
 	public void update(RestApi restApi) throws Exception {
 		Connection con = ConnectionUtil.getConnection();
 		String sql = "update entity_rest_api set entity_name=?,rest_api=? where table_name=?";

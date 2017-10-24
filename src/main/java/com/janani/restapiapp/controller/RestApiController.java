@@ -3,6 +3,7 @@ package com.janani.restapiapp.controller;
 import java.util.List;
 
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import com.janani.restapiapp.dao.RestApiDAO;
 import com.janani.restapiapp.model.RestApi;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/restApi")
 public class RestApiController {
 	@GetMapping
